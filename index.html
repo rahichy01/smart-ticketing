@@ -2,98 +2,220 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
 </head>
 
 <body>
 
-    <header class="container mx-auto">
-<!-- navbar design start -->
-        <nav class="w-11/12 mx-auto">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Destination</a></li>
-                        <li><a>Search</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-3xl text-[#030712B3] font-extrabold ">P-Ticket</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 *:text-base *:font-medium">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end ">
-                  <a class="btn bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100] rounded-lg" >Bus <i class="fa-solid fa-van-shuttle"></i></a>
-                </div>
+  <header class="container mx-auto">
+    <!-- navbar design start -->
+    <nav class="w-11/12 mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl text-[#030712B3] font-extrabold ">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 *:text-base *:font-medium">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end ">
+          <a class="btn bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100] rounded-lg">Bus <i
+              class="fa-solid fa-van-shuttle"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar design end -->
+
+    <!-- banner section start -->
+    <section style="background-image: url(images/banner.png);"
+      class=" h-screen bg-no-repeat bg-center flex items-center justify-center">
+      <div class="space-y-8 *:text-center">
+        <h1 class="text-6xl font-extrabold text-white ">End-to-End Travel with </h1>
+        <h1 class="text-6xl font-extrabold text-[#1DD100]">P Paribahan </h1>
+        <p class="font-normal text-[18px] text-white">Yes, you can run unit tests and view the results directly within
+          the app. The <br> integrated testing features allow for a streamlined .</p>
+        <button
+          class="btn text-xl font-bold px-6 h-14 bg-[#1DD100] hover:bg-[#1cd100be] text-[#030712] border-none outline-none mx-auto block">Buy
+          Tickets</button>
+      </div>
+    </section>
+
+    <section class="flex items-center justify-center gap-5 relative top-[-90px]">
+
+      <div
+        class="flex items-center justify-center gap-3  border-b-[3px] border-lime-400 rounded-2xl bg-white px-6 py-4">
+        <i class="fa-solid fa-people-group text-[#1cd100e5] text-5xl"></i>
+        <div>
+          <h1 class="text-[#030712] text-4xl font-bold">500K+</h1>
+          <p class="text-[#030712ca] text-base font-normal">Registered users</p>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center items-center gap-3  border-b-[3px] border-lime-400 rounded-2xl bg-white px-6 py-4">
+        <i class="fa-solid fa-light fa-ticket text-[#1cd100e5]  text-5xl"></i>
+        <div>
+          <h1 class="text-[#030712] text-4xl font-bold">1.7 lacks</h1>
+          <p class="text-[#030712ca] text-base font-normal">Tickets sold</p>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center items-center gap-3  border-b-[3px] border-lime-400 rounded-2xl bg-white px-6 py-4">
+        <i class="fa-solid fa-thin fa-van-shuttle text-[#1cd100e5]  text-5xl"></i>
+        <div>
+          <h1 class="text-[#030712] text-4xl font-bold">80K+</h1>
+          <p class="text-[#030712ca] text-base font-normal">Rental partners</p>
+        </div>
+      </div>
+    </section>
+    <!-- banner section end -->
+
+  </header>
+
+  <main>
+
+    <!-- Best offers for you section start -->
+    <h1 class="text-center text-[#030712] font-bold text-[40px]">Best offers for you</h1>
+
+    <section class="flex justify-around w-11/12 mx-auto my-12">
+      <div class="flex items-center justify-center bg-[#FFBF0F] rounded-2xl px-10">
+        <div class="px-8 py-8 space-y-2">
+          <h2 class="text-[40px] text-[#030712de] font-bold">15% OFF</h2>
+          <h3 class="text-[20px] font-semibold text-[#030712de] ">on your next purchase</h3>
+          <p class="text-[18px] font-medium text-[#0307128f]">use by January 2024</p>
+        </div>
+        <img src="images/cupon-devider.png" alt="">
+        <div class="px-8 py-8 space-y-2">
+          <h2 class="text-[32px] font-bold text-[#030712]">NEW15</h2>
+          <p class="text-[18px] font-medium text-[#0307128f]">Coupon Code</p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center bg-[#F78C9C] rounded-2xl px-10">
+        <div class="px-8 py-8 space-y-2">
+          <h2 class="text-[40px] text-[#030712de] font-bold">15% OFF</h2>
+          <h3 class="text-[20px] font-semibold text-[#030712de] ">on your next purchase</h3>
+          <p class="text-[18px] font-medium text-[#0307128f]">use by January 2024</p>
+        </div>
+        <img src="images/cupon-devider.png" alt="">
+        <div class="px-8 py-8 space-y-2">
+          <h2 class="text-[32px] font-bold text-[#030712]">NEW15</h2>
+          <p class="text-[18px] font-medium text-[#0307128f]">Coupon Code</p>
+        </div>
+      </div>
+    </section>
+    <button class="btn btn-outline text-[#1DD100] border-[#1DD100] rounded-xl block mx-auto px-6">See All
+      Offers</button>
+    <!-- Best offers for you section end -->
+
+    <!-- P.H Paribahan section start -->
+    <section class="bg-[#F7F8F8] py-24 mt-10 rounded-3xl  border-t-[3px] border-lime-400">
+
+      <div class="w-11/12 mx-auto">
+
+        <h1 class="text-[40px] font-bold text-[#030712] text-center">P.H Paribahan</h1>
+        <p class="font-normal text-[18px] text-[#030712af] text-center">Yes, you can run unit tests and view the results
+          directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+
+      </div>
+
+      <div class="w-11/12 mx-auto flex items-center bg-white  rounded-3xl mt-16">
+
+        <!-- P.H Paribahan section left -->
+        <div class="flex-1 ml-8">
+
+          <div class="flex items-center justify-between mb-8">
+            <div class="flex gap-3 justify-center items-center">
+              <img src="images/bus-logo.png" alt="">
+              <div>
+                <h1 class="font-bold text-[32px] text-[#030712]">Greenline Paribahan</h1>
+                <p class="text-[18px] font-normal text-[#03071286]">Coach-009-WEB ! AC_Business</p>
               </div>
-        </nav>
-<!-- navbar design end -->
-
-<!-- banner section start -->
-        <section style="background-image: url(images/banner.png);" class=" h-screen bg-no-repeat bg-center flex items-center justify-center">
-            <div class="space-y-8 *:text-center">
-                <h1 class="text-6xl font-extrabold text-white ">End-to-End Travel with </h1>
-                <h1 class="text-6xl font-extrabold text-[#1DD100]">P Paribahan </h1>
-                <p class="font-normal text-[18px] text-white">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-                <button class="btn text-xl font-bold px-6 h-14 bg-[#1DD100] hover:bg-[#1cd100be] text-[#030712] border-none outline-none mx-auto block">Buy Tickets</button>
             </div>
-        </section>
-
-        <section class="flex items-center justify-center gap-5 relative top-[-90px]">
-
-          <div class="flex items-center justify-center gap-3  border-b-[3px] border-lime-400 rounded-2xl bg-white px-6 py-4">
-            <i class="fa-solid fa-people-group text-[#1cd100e5] text-5xl"></i>
-            <div>
-              <h1 class="text-[#030712] text-4xl font-bold">500K+</h1>
-              <p class="text-[#030712ca] text-base font-normal">Registered users</p>
+            <div class="flex gap-3 justify-center items-center bg-[#1cd10028] py-3 px-4 rounded-2xl">
+              <img src="images/seat-green.png" alt="">
+              <span class="text-base text-[#1DD100] font-medium">40 Seats left</span>
             </div>
           </div>
 
-          <div class="flex justify-center items-center gap-3  border-b-[3px] border-lime-400 rounded-2xl bg-white px-6 py-4">
-            <i class="fa-solid fa-light fa-ticket text-[#1cd100e5]  text-5xl"></i>
-            <div>
-              <h1 class="text-[#030712] text-4xl font-bold">500K+</h1>
-              <p class="text-[#030712ca] text-base font-normal">Registered users</p>
+          <div class="bg-[#F7F8F8] space-y-4 p-8 rounded-2xl">
+            <div class="flex justify-between *:text-[18px] font-semibold">
+              <p class="text-[#0307128b]">Route</p>
+              <p class="text-[#030712]">Dhaka - Sylhet</p>
             </div>
+
+            <hr style="border: 1px dashed #0307122b;">
+
+            <div class="flex justify-between *:text-[18px] font-semibold">
+              <p class="text-[#0307128b]">Departure Time</p>
+              <p>9:00 PM</p>
+            </div>
+            <hr style="border: 1px dashed #0307122b;">
+
+            <div class="flex justify-between *:text-[18px] *:font-semibold ">
+              <p class="text-[#030712bb] bg-[#0307120c] rounded-xl py-3 px-5">Boarding Point - Laxmipur</p>
+              <p class="text-[#030712b0] bg-[#0307120c] rounded-xl py-3 px-5">Dropping Point - Bogura</p>
+              <p class="text-[#030712b1] bg-[#0307120c] rounded-xl py-3 px-10">Est. Time - 11 Hour</p>
+            </div>
+
           </div>
 
-          <div class="flex justify-center items-center gap-3  border-b-[3px] border-lime-400 rounded-2xl bg-white px-6 py-4">
-            <i class="fa-solid fa-thin fa-van-shuttle text-[#1cd100e5]  text-5xl"></i>
-            <div>
-              <h1 class="text-[#030712] text-4xl font-bold">500K+</h1>
-              <p class="text-[#030712ca] text-base font-normal">Registered users</p>
-            </div>
-          </div>
-        </section>
-<!-- banner section end -->
 
-    </header>
 
-    <main>
+        </div>
 
-    </main>
 
-    <footer>
 
-    </footer>
+
+        <!-- P.H Paribahan section midile -->
+        <div class="px-8">
+          <img src="images/info-devider.png" alt="">
+        </div>
+        <!-- P.H Paribahan section right -->
+        <div class="flex flex-col items-center justify-center px-8">
+          <img src="images/fare.png" alt="">
+          <h2 class="font-bold text-[32px] text-[#030712]">550 Taka</h2>
+          <p class="font-semibold text-[#0307128f] text-xl">Per Seat</p>
+        </div>
+
+      </div>
+
+
+    </section>
+    <!-- P.H Paribahan section end -->
+
+
+  </main>
+
+  <footer>
+
+  </footer>
 
 
 </body>
